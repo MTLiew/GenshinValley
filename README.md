@@ -1,4 +1,4 @@
-# GenshinArtifactFarmer
+# Genshin Valley
 
 WORK IN PROGRESS
 

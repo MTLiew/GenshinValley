@@ -51,6 +51,7 @@ namespace GenshinArtifactFarmer
             using (StreamReader r = new StreamReader(file))
             {
                 string jsonTemp = r.ReadToEnd();
+                //need to change "lock" in json to something else
                 List<Artifact> artifacts = JsonConvert.DeserializeObject<List<Artifact>>(jsonTemp);
             }
             

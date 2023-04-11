@@ -6,8 +6,24 @@ using System.Threading.Tasks;
 
 namespace GenshinArtifactFarmer
 {
+    public class iSubstats
+    {
+        string key;
+        float value;
+    }
+
     public class Artifact
     {
+        private string setKey { get; set; }
+        private string slotKey { get; set; }
+        private int rarity { get; set; }
+        private string mainStatKey { get; set; }
+        private int level { get; set; }
+        private iSubstats[] substats { get; set; }
+        private string location { get; set; }
+        //IMPLEMENT BOOL LOCK
+        private int id { get; set; }
+
         private string name { get; set; }
 
         private float flatATK { get; set; }
@@ -18,7 +34,7 @@ namespace GenshinArtifactFarmer
 
         private float flatDEF { get; set; }
         private float percentDEF { get; set; }
-        
+
         private float ER { get; set; }
         private float EM { get; set; }
 
